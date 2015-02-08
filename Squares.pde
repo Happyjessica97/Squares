@@ -92,10 +92,10 @@ public void mouseClicked() {
   } 
   	else if(correct == false){
     spotOn = false;
-    
-		background(0);
+    timer = -1000;
+		/*background(0);
 		stroke(255,255,255);
-		text("GAME OVER", 50,50);
+		text("GAME OVER", 50,50);*/
 	
 
   } 
