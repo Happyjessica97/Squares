@@ -1,3 +1,19 @@
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class Squares extends PApplet {
+
 ArrayList <Square> items; 
 Special pop;
 boolean spotOn = false;
@@ -129,4 +145,13 @@ class Special{
 		fill(107, 255, 248);
 		rect(otherX,otherY, sizeOfSquare,sizeOfSquare);
 	}
+}
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "Squares" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
+    }
+  }
 }
